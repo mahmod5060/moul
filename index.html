@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>نظام ذكي لإدارة الأسعار</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>📦 منصة ذكية لإدارة الأسعار والصور</h1>
+
+  <div class="form">
+    <input type="text" id="productName" placeholder="اسم المنتج">
+    <input type="number" id="productPrice" placeholder="السعر بالجنيه">
+    <input type="file" id="productImage" accept="image/*">
+    <button id="addBtn">➕ إضافة المنتج</button>
+  </div>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="🔍 ابحث عن منتج...">
+  </div>
+
+  <div class="products" id="productList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
