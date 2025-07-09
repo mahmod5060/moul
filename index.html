@@ -2,22 +2,23 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>نظام ذكي لإدارة الأسعار</title>
+  <title>منصة الأسعار الذكية</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>📦 منصة ذكية لإدارة الأسعار والصور</h1>
+  <h1>📦 منصة الأسعار الذكية</h1>
 
-  <div class="form">
-    <input type="text" id="productName" placeholder="اسم المنتج">
-    <input type="number" id="productPrice" placeholder="السعر بالجنيه">
-    <input type="file" id="productImage" accept="image/*">
-    <button id="addBtn">➕ إضافة المنتج</button>
+  <div class="password-container">
+    <input type="password" id="passwordInput" placeholder="🔒 أدخل كلمة السر">
+    <button onclick="checkPassword()">دخول</button>
   </div>
 
-  <div class="search-container">
-    <input type="text" id="searchInput" placeholder="🔍 ابحث عن منتج...">
+  <div class="form hidden" id="formSection">
+    <input type="text" id="productName" placeholder="اسم المنتج">
+    <input type="number" id="productPrice" placeholder="السعر">
+    <input type="file" id="productImage" accept="image/*">
+    <button onclick="addProduct()">➕ إضافة المنتج</button>
   </div>
 
   <div class="products" id="productList"></div>
